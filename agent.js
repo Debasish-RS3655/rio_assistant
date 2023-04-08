@@ -1,6 +1,3 @@
-//this is the overall server for the project
-//Debashish Buragohain
-
 const { Configuration, OpenAIApi } = require("openai");
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -44,9 +41,7 @@ app.post('/get-gpt-command', async function (req, res) {
     const response = completion.data.choices[0].text;
     console.log("received response: ", response)
     res.set("Content-Type", "text/html");
-    //sending a dummy response for the time being
     res.send(response);
-    //res.send('TYPESUBMIT 8 "anchorage redfin"');
 })
 
 const history = []
