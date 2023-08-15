@@ -18,4 +18,6 @@ When the user asks for anything, the model is trained to issue a search query wh
 
 The main idea behind constructing the prompt is assuming it to be an agent controlling a browser with given objectives and specific commands that it can issue on a webpage. Then we give examples of how the webpage looks like, and the associated command for that particular webpage. Provided a large dataset, the model can give fairly accurate associated commands. In addition to that, the model keeps track of all the previous conversations, so as to adjust the responses that result in a more positive feedback from the user. This way, it generates more and more responses that resonate with the user’s likes and dislikes.
 
+## Platform
+The Chromium browser is driven using Python3 and the OpenAI requests are made in NodeJS
 
